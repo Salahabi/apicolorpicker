@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Color Picker</h1>
+        <header class="container">
+            <form id="form">
+                <input type="color" id="color-picker" name="color-picker" value="#000000">
+                <select id="drop-menu" class="drop-menu">
+                    <option class="dropdown-content" value="monochrome">monochrome</option>
+                    <option class="dropdown-content" value="monochrome-dark">monochrome-dark</option>
+                    <option class="dropdown-content" value="monochrome-light">monochrome-light</option>
+                    <option class="dropdown-content" value="analogic">analogic</option>
+                    <option class="dropdown-content" value="complement">complement</option>
+                    <option class="dropdown-content" value="analogic-complement">analogic-complement</option>
+                    <option class="dropdown-content" value="triad">triad</option>
+                    <option class="dropdown-content" value="quad">quad</option>
+                </select>
+                <button id="submit-button" class="submit-button" type="submit">Get color scheme</button>
+            </form>
+        </header>
+        <main>
+            <div class="color-palette" id="color-palette-id">
+                <div class="color-box"> 
+                    <div class="color-bg"></div>
+                    <p></p>
+                </div>
+                <div class="color-box"> 
+                    <div class="color-bg"></div>
+                    <p></p>
+                </div>
+                <div class="color-box"> 
+                    <div class="color-bg"></div>
+                    <p></p>
+                </div>
+                <div class="color-box"> 
+                    <div class="color-bg"></div>
+                    <p></p>
+                </div>
+                <div class="color-box"> 
+                    <div class="color-bg"></div>
+                    <p></p>
+                </div>
+            </div>
+        </main>
+        <div id="custom-alert" class="custom-alert"></div>
+        <script src="index.js"></script>
+    </body>
+</html>

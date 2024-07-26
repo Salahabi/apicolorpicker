@@ -1,0 +1,94 @@
+html, body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    width: 34.375em; /* 550px / 16px */
+    height: 5.625em; /* 90px / 16px */
+    margin: 1.5625em 0; /* 25px / 16px */
+    background-color: #fff;
+    padding: 0 0.9375em; /* 15px / 16px */
+    box-sizing: border-box;
+    border-radius: 0.3125em; /* 5px / 16px */
+}
+
+h1 {
+    margin-bottom: 1.25em; /* 20px / 16px */
+}
+
+#color-picker,
+.drop-menu,
+.submit-button {
+    height: 2.625em; /* 42px / 16px */
+    border: 0.0625em solid #ccc; /* 1px / 16px */
+    background-color: #fff;
+    border-radius: 0.3125em; /* 5px / 16px */
+    cursor: pointer;
+    margin: 0 0.625em; /* 10px / 16px */
+}
+
+.submit-button:hover {
+    background-color: #e4dddd;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+input {
+    margin-top: 0.3125em; /* 5px / 16px */
+    padding: 0;
+}
+
+.color-picker {
+    width: 3.8125em; /* 61px / 16px */
+}
+
+.drop-menu {
+    width: 19.5em; /* 312px / 16px */
+}
+
+.submit-button {
+    width: 7.6875em; /* 123px / 16px */
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 34.375em; /* 550px / 16px */
+    height: 31.75em; /* 508px / 16px */
+}
+
+.color-box {
+    text-align: center;
+}
+
+.color-bg {
+    height: 28.875em; /* 462px / 16px */
+}
+
+.custom-alert {
+    position: absolute;
+    padding: 0.5em;
+    background-color: #fff;
+    color: #333;
+    border-radius: 0.25em;
+    display: none; /* Initially hidden */
+    font-size: 0.875em; /* Slightly smaller text */
+    z-index: 1000; /* Ensure it appears on top */
+}
+
